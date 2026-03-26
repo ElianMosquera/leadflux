@@ -1,6 +1,6 @@
 import { supabase } from './supabase'
 
-const BASE = import.meta.env.VITE_API_URL ?? '/api'
+const BASE = 'https://leadflux-yu4k.onrender.com/api';
 
 async function getHeaders() {
   const { data: { session } } = await supabase.auth.getSession()
